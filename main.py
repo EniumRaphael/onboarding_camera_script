@@ -34,6 +34,7 @@ def main():
 
 			print(f"Saving images/{filename}.jpg")
 
+			os.makedirs("images", exist_ok=True)
 			cv.imwrite(f"images/{filename}.jpg", img)
 
 			filename = ""
