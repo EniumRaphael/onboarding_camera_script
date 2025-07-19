@@ -2,6 +2,12 @@ import cv2 as cv
 import os
 import logging
 
+logging.basicConfig(
+	level=logging.INFO,
+	format='%(asctime)s | [%(levelname)s] %(message)s',
+	datefmt='%d-%m-%Y'
+)
+
 def list_cameras(max_tested=10):
 	available = []
 	for i in range(max_tested):
