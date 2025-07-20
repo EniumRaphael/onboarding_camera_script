@@ -26,7 +26,7 @@ def choose_camera():
 
 	print("Caméras disponibles :")
 	for idx in available:
-		print(f"[{idx}] /dev/video{idx} (ou équivalent)")
+		print(f"[{idx}] /dev/video{idx}")
 
 	while True:
 		try:
