@@ -65,7 +65,7 @@ def main():
 		key = cv.waitKey(1)
 
 		if key == 0x1b:		# escape
-            logging.info("Bisous bbye.")
+			logging.info("Bisous bbye.")
 			break
 		elif key == 0x7f:	# backspace
 			filename = filename[:-1]
